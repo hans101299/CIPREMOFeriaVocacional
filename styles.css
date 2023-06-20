@@ -216,10 +216,10 @@ footer img {
 
 @media (max-width: 680px) {
     h1{
-        font-size: 65px;
+        font-size: 55px;
     }
     h2 {
-        font-size: 25px;
+        font-size: 21px;
     }
     .section {
         width: 305px;
