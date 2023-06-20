@@ -163,6 +163,16 @@ footer img {
 }
 
 
+@media (max-width: 1600px) {
+    .logo {
+        width: 6.5vw;
+        min-width: 75px;
+    }
+    .containerAlumnos{
+        margin-left: 25px;
+    }
+}
+
 @media (max-width: 1400px) {
     .right-image{
         display: none;
@@ -177,11 +187,11 @@ footer img {
         margin: 0px;
     }
     .logo {
-        width: 10vw;
-        max-width: 150px;
-        position: absolute;
         top: 30px;
         left: 30px;
+    }
+    .containerAlumnos{
+        margin-left: 13px;
     }
 }
 
