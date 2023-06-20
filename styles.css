@@ -1,0 +1,254 @@
+/* body {
+    margin: 0;
+    height: 100vh;
+    background: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+body{
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-family: 'Lastica';
+    font-size: 3rem;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Lastica';
+    font-size: 8rem;
+    margin: 10px;
+    min-width: none;
+}
+
+h3 {
+    position: absolute;
+    font-size: 1.9rem;
+    left: 48px;
+    display: inline-block;
+    margin: 0px;
+    width: 320px;
+    padding: 5px 0px;
+    border: 3px solid white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.logo {
+    width: 16vw;
+    max-width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.left-image {
+    z-index: -10;
+    height: 100vh;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.right-image {
+    z-index: -10;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.containerImages {
+    z-index: -20;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #5DE0E6, #004AAD);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+}
+
+.icon {
+    width: 50px;
+}
+
+.image-container {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #C3CFE6;
+    border: 5px solid white;
+}
+
+.section {
+    width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 15px;
+}
+
+.containerCenter {
+    max-width: 840px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+#red {
+    background-color: #D10004;
+}
+
+#yellow {
+    background-color: #FFA600;
+}
+
+#green {
+    background-color: #30A103;
+}
+
+.containerAlumnos{
+    display: flex;
+    margin-left: 60px;
+    flex-direction: column;
+    right: 50px;
+}
+
+.alumnosImage {
+    width: 300px;
+    border: 15px solid #0277B5;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+footer img {
+    width: 5vw;
+    max-width: 70px;
+    min-width: 40px;
+}
+
+.containerContenido {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 1400px) {
+    .right-image{
+        display: none;
+    }
+
+    h1 {
+        font-size: 9.5vw;
+        margin: 10;
+        min-width: 680px;
+    }
+    h2 {
+        font-size: 3.6vw;
+        margin: 0px;
+    }
+    .logo {
+        width: 10vw;
+        max-width: 150px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 1209px) {
+    .section {
+        margin: 40px 15px;
+    }
+
+    .containerCenter {
+        margin-top: 10px;
+    }
+
+    .containerContenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerAlumnos{
+        margin-left: 0px;
+        flex-direction: row;
+        right: 0px;
+    }
+    .alumnosImage {
+        width: 20vw;
+        min-width: 130px;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+  
+
+@media (max-width: 680px) {
+    h1{
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .section {
+        width: 305px;
+    }
+    h3 {
+        font-size: 1.1rem;
+        width: 240px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+    
+    .image-container {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .containerCenter {
+        max-width: 700px;
+        flex-direction: column;
+    }
+
+}
+
+
+@font-face {
+    font-family: 'Lastica';
+    src: url('./fonts/FontsFree-Net-Lastica.ttf');
+  }
