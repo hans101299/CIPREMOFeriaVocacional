@@ -10,6 +10,11 @@
     align-items: center;
 } */
 
+a {
+    /* Resetting text styles */
+    color: inherit;
+    text-decoration: none;
+  }
 
 body{
     margin: 0;
@@ -58,6 +63,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
+    pointer-events:none;
 }
   
 .right-image {
@@ -102,6 +108,7 @@ h3 {
     overflow: hidden;
     background-color: #C3CFE6;
     border: 5px solid white;
+    pointer-events:none;
 }
 
 .section {
@@ -151,6 +158,7 @@ footer {
     position: absolute;
     bottom: 30px;
     left: 50px;
+    z-index: 50;
 }
 
 footer img {

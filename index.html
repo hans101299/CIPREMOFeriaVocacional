@@ -6,8 +6,8 @@
     <title>CIPREMO</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <div class="containerImages">
+<body class="containerImages">
+    <!-- <div class="containerImages"> -->
         <img src="./images/ImagenLeft.png" class="left-image">
         <img src="./images/logoCipremo.png" alt="Logo Cipremo" class="logo">
         <div class="containerContenido">
@@ -42,16 +42,27 @@
             </div>
         </div>
         <img src="./images/ImagenRight.png" class="right-image">
+    <!-- </div> -->
 
-
-        <footer>
-            <img src="./images/icons/iconLINKEDIN.png" alt="Icono LinkedIn">
-            <img src="./images/icons/iconFB.png" alt="Icono Facebook">
-            <img src="./images/icons/iconIG.png" alt="Icono Instagram">
-        </footer>
-    </div>
-
+    <footer>
+        <a href="https://www.linkedin.com/company/circulo-de-investigaci%C3%B3n-de-preprocesamiento-y-modelamiento-de-datos/" target="_blank"><img src="./images/icons/iconLINKEDIN.png" alt="Icono LinkedIn"></a>
+        <a href="https://www.facebook.com/profile.php?id=100083168508384" target="_blank"><img src="./images/icons/iconFB.png" alt="Icono Facebook"></a>
+        <img src="./images/icons/iconIG.png" alt="Icono Instagram">
+    </footer>
     
+    <script>
+        // Get all elements in the document
+        const elements = document.querySelectorAll("*");
     
+        // Add click event listener to each element
+        elements.forEach(function (element) {
+          element.addEventListener("click", logClickedElement);
+        });
+    
+        // Event handler for logging clicked element
+        function logClickedElement(event) {
+          console.log("Element clicked:", event.target);
+        }
+      </script>
 </body>
 </html>
