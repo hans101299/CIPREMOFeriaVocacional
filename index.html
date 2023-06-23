@@ -16,23 +16,29 @@
                 <h2>BIENVENIDOS A </h2><br> 
                 <h1>CIPREMO</h1>
                 <div class="containerCenter">
-                    <div class="section">
-                        <div class="image-container">
-                            <img src="./images/icons/iconWho.png" alt="Icono ¿Quiénes somos?" class="icon">
-                        </div>
-                        <h3 id="red">¿Quienes somos?</h3>
+                    <div>
+                        <a href="./sites/nosotros.html" class="section">
+                            <div class="image-container">
+                                <img src="./images/icons/iconWho.png" alt="Icono ¿Quiénes somos?" class="icon">
+                            </div>
+                            <h3 id="red">¿Quienes somos?</h3>
+                        </a>
                     </div>
-                    <div class="section">
-                        <div class="image-container">
-                            <img src="./images/icons/iconGitLab.png" alt="Icono GitLab" class="icon">
-                        </div>
-                        <h3 id="yellow">GIT Lab</h3>
+                    <div>
+                        <a href="https://gitlab.com/users/elias.lovon.ello/projects" class="section" target="_blank">
+                            <div class="image-container">
+                                <img src="./images/icons/iconGitLab.png" alt="Icono GitLab" class="icon">
+                            </div>
+                            <h3 id="yellow">GIT Lab</h3>
+                        </a>
                     </div>
-                    <div class="section">
-                        <div class="image-container">
-                            <img src="./images/icons/iconQuiz.png" alt="Icono Quiz" class="icon">
-                        </div>
-                        <h3 id="green">Aprende con nosotros</h3>
+                    <div>
+                        <a href="" class="section">
+                            <div class="image-container">
+                                <img src="./images/icons/iconQuiz.png" alt="Icono Quiz" class="icon">
+                            </div>
+                            <h3 id="green">Aprende con nosotros</h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -50,19 +56,5 @@
         <img src="./images/icons/iconIG.png" alt="Icono Instagram">
     </footer>
     
-    <script>
-        // Get all elements in the document
-        const elements = document.querySelectorAll("*");
-    
-        // Add click event listener to each element
-        elements.forEach(function (element) {
-          element.addEventListener("click", logClickedElement);
-        });
-    
-        // Event handler for logging clicked element
-        function logClickedElement(event) {
-          console.log("Element clicked:", event.target);
-        }
-      </script>
 </body>
 </html>
