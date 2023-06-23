@@ -1,0 +1,179 @@
+body {
+    margin: 0px;
+}
+
+a {
+    /* Resetting text styles */
+    color: inherit;
+    text-decoration: none;
+  }
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+}
+h2{
+    margin: 0px;
+    margin-bottom: 8px;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: #FBAE36;
+}
+
+.title{
+    background-image: linear-gradient(to right, rgb(137, 226, 230, 0.8), rgb(82, 132, 198,0.8)), url(../images/acercaDeNosotros.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 20vw;
+    max-width: 200px;
+    min-width: 200px;
+    margin: 30px;
+}
+
+.containerNosotros {
+    
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+}
+
+.informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 8.5vh;
+    margin-bottom: 8.5vh;
+}
+
+.informacionParte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    min-width: 300px;
+    margin: 40px 30px 0px 30px;
+}
+
+.informacionParte img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.informacionParte p {
+    margin: 0px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.containerIntegrantes {
+    display: flex;
+    background-image: linear-gradient(to right, #5DE0E6, #004AAD);
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+}
+
+.containerImagenes {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    padding: 50px 0px;
+}
+
+.containerImagenes img {
+    width: 80%;
+    margin: 15px 0px;
+    border-radius: 100%;
+}
+
+.containerImagenes h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #1A4789;
+}
+
+.principalElement {
+    grid-row-start: 1;
+    grid-row-end: end;
+    place-self: center;
+}
+
+.integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante h3 {
+    font-size: max(min(1.4rem, 2vw),1rem);
+    text-align: center;
+}
+
+.principalElement h3 {
+    font-size: 2rem;
+}
+
+.containerImagenes h3, p{
+    margin: 0px;
+    font-family: 'Saira Condensed';
+}
+
+.containerImagenes h3{
+    width: 80%;
+}
+
+@media (max-width: 735px) {
+    h2{
+        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 1.6rem;
+    }
+    .informacionParte p {
+        font-size: 1.3rem;
+    }
+    .informacionParte {
+        display: block;
+        width: 90%;
+    }
+    
+    .informacionParte img {
+        margin-right: 20px;
+        margin-bottom: 0px;
+        float: left;
+    }
+
+    .containerImagenes {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .principalElement {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        place-self: center;
+    }
+
+
+}
+
